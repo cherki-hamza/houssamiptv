@@ -14,14 +14,86 @@
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <!-- <style>
-		.navbar {
-			position: fixed;
-			width: 100%;
-			z-index: 1000000;
-			top: 0;
-		}
-	</style> -->
+    <style>
+        /* .accordion-box .block .acc-btn.active {
+            color: black;
+        } */
+
+
+        [data-toggle=collapse] i:before {
+            content: "-";
+        }
+
+        [data-toggle=collapse].collapsed i:before {
+            content: "+";
+        }
+
+        #accordion .card-header {
+            margin-bottom: 8px;
+        }
+
+        #accordion .accordion-title {
+            position: relative;
+            display: block;
+            padding: 8px 0 8px 50px;
+            background: rgb(0, 45, 91);
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            width: 100%;
+            text-align: left;
+            transition: all 0.4s ease-in-out;
+        }
+
+        #accordion .accordion-title i {
+            position: absolute;
+            width: 40px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: #fff;
+            background: radial-gradient(rgba(33, 55, 68, 0.8), #213744);
+            text-align: center;
+            border-right: 1px solid transparent;
+        }
+
+        #accordion .accordion-title:hover {
+            padding-left: 60px;
+            background: rgb(0, 45, 91);
+            color: #fff;
+        }
+
+        #accordion .accordion-title:hover i {
+            border-right: 1px solid #fff;
+        }
+
+        #accordion .accordion-body {
+            padding: 40px 55px;
+        }
+
+        #accordion .accordion-body ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        #accordion .accordion-body li {
+            padding-left: 1.2rem;
+            text-indent: -1.2rem;
+        }
+
+        #accordion .accordion-body li:before {
+            content: "";
+            padding-right: 5px;
+            font-family: "Flaticon";
+            font-size: 16px;
+            font-style: normal;
+            color: rgb(0, 45, 91);
+        }
+    </style>
 
 
 
@@ -72,11 +144,9 @@
 
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                    <a class="" href="#">
-                        <div style="margin-left: 0px;" class="float-left">
-                            <a href="index.html"><img src="images/logo-4.png" alt="" title=""></a>
-                        </div>
-                    </a>
+                    <div style="margin-left: 0px;" class="float-left">
+                        <a href="index.html"><img class="site_logo" src="images/logo-4.png" alt="" title=""></a>
+                    </div>
                     <button style="color: white;" class="navbar-toggler text-white" type="button" data-toggle="collapse"
                         data-target="#nav-bar">
                         <span class="sr-only text-white"> Switch Menu </span>
@@ -135,450 +205,377 @@
 
 
                     <!-- Faq Section -->
-                    <section class="faq-section" style="background-image: url(images/background/4.jpg)">
+                    <section class="faq-section container" style="background-image: url(images/background/4.jpg)">
                         <div class="auto-container">
                             <div class="row clearfix">
 
                                 <!-- start left 6 -->
-                                <div class="accordion-column col-lg-6 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="sec-title">
-                                            <div class="separator"></div>
-                                            <h3>Frequently Asked Questions</h3>
-                                        </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="container">
+                                        <div id="accordion" class="py-5">
+                                            <div class="card border-0">
 
-                                        <!-- start Box -->
-                                        <ul class="accordion-box">
-
-                                            <!-- startBlock 1 -->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>
-                                                    How to watch IPTV Service?​
+                                                <div class="card-header p-0 border-0" id="heading-11">
+                                                    <button class="btn btn-link accordion-title border-0 collapse"
+                                                        data-toggle="collapse" data-target="#collapse-11"
+                                                        aria-expanded="true" aria-controls="#collapse-11"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>
+                                                        How to watch IPTV Service?​ </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">
+                                                <div id="collapse-11" class="collapse show" aria-labelledby="heading-11"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>
                                                             Watch our iptv package on all your devices, you can use on
                                                             your TV, android box, mobile phone, mag box and tablets…
-                                                        </div>
+                                                        </p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <!-- end Block 1 -->
+                                            </div>
 
-                                            <!-- start Block 2 -->
-                                            <li class="accordion block active-block">
-                                                <div class="acc-btn active">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>
-                                                    What is our Quality servers?
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-12">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-12"
+                                                        aria-expanded="false" aria-controls="#collapse-12"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>
+                                                        Do you have problem?​ </button>
                                                 </div>
-                                                <div class="acc-content current">
-                                                    <div class="content">
-                                                        <div class="text">
-                                                            We are first the best service provider on internet, and we
-                                                            provide no freezing technology with 99% uptime.
-                                                        </div>
+                                                <div id="collapse-12" class="collapse " aria-labelledby="heading-12"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>We are here to help you 24/7, feel free to contact our
+                                                            technical support team.</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <!-- end Block 2 -->
+                                            </div>
 
-                                            <!-- start Block 3 -->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>
-                                                    Do you have problem?​
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-241">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-241"
+                                                        aria-expanded="false" aria-controls="#collapse-241"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>
+                                                        What is our Quality servers? </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">
-                                                            We are here to help you 24/7, feel free to contact our
-                                                            technical support team.
-                                                        </div>
+                                                <div id="collapse-241" class="collapse " aria-labelledby="heading-241"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>We are first the best service provider on internet, and we
+                                                            provide no freezing technology with 99% uptime.</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <!-- end Block 3 -->
+                                            </div>
 
-                                            <!-- start Block 4 -->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>
-                                                    What is IPTV Reseller Solution?
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-242">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-242"
+                                                        aria-expanded="false" aria-controls="#collapse-242"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>
+                                                        What is IPTV Reseller Solution? </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">
-                                                            try our Buy IPTV reseller solution and make money with us,
+                                                <div id="collapse-242" class="collapse " aria-labelledby="heading-242"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>try our Buy IPTV reseller solution and make money with us,
                                                             get your own Buy IPTV reseller panel, and manage your
-                                                            customers easily with only some clicks!
-                                                        </div>
+                                                            customers easily with only some clicks!</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <!-- end Block 4 -->
+                                            </div>
 
-                                            <!-- start Block 5 -->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>
-                                                    Can i get refund or change iptv plan?
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-243">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-243"
+                                                        aria-expanded="false" aria-controls="#collapse-243"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>
+                                                        Can i get refund or change iptv plan? </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">
-                                                            Once the order is confirmed and account is offered and
+                                                <div id="collapse-243" class="collapse " aria-labelledby="heading-243"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>Once the order is confirmed and account is offered and
                                                             activated, We DO NOT offer turned or refund, Please note
                                                             that and
                                                             have a free test before placing the order, because the IPTV
-                                                            account code we cannot sell it.
-                                                        </div>
+                                                            account code we cannot sell it.</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <!-- end Block 5 -->
+                                            </div>
 
-                                            <!-- start Block 6 -->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>
-                                                    Can I purchase IPTV as an alternative to satellite service?
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-244">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-244"
+                                                        aria-expanded="false" aria-controls="#collapse-244"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>
+                                                        Can I purchase IPTV as an alternative to satellite service?
+                                                    </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">
-                                                            Yes, it is possible for you to purchase IPTV as an
+                                                <div id="collapse-244" class="collapse " aria-labelledby="heading-244"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>Yes, it is possible for you to purchase IPTV as an
                                                             alternative to satellite service. You don’t need to buy a
                                                             dish and
                                                             you can get the connection with your existing broadband
-                                                            connection.
-
-                                                            Why can’t I access my account?
-
-                                                            After purchasing your IPTV Subscription, we will send your
-                                                            m3u list or the portal to your email within 24 hours. Then
-                                                            you should follow our instructions to get your IPTV Service
-                                                            up and running. You must ensure having your device connected
-                                                            to the internet and supports IPTV
-
-                                                            Can people outside United States, United Kingdom and Canada
-                                                            access IPTV?
-
-                                                            Right, you can get IPTV Subscription anywhere in the world .
-
-                                                            Can I use the subscription on multiple devices?
-
-                                                            Well, you can use your IPTV subscription on multiple
-                                                            devices. However, you will only be able to watch the
-                                                            channels
-                                                            content on one device only at the same time.
-
-                                                            What are the payment options?
-
-                                                            You can pay for your service through credit card or debit
-                                                            card or Bitcoin. Payments will be taken via a secure gateway
-                                                            and there aren’t any hidden fees.
-
-                                                            When will I get my subscription activated?
-
+                                                            connection. Why can’t I access my account? After purchasing
+                                                            your
+                                                            IPTV Subscription, we will send your m3u list or the portal
+                                                            to your email within 24 hours. Then you should follow our
+                                                            instructions to get your IPTV Service up and running. You
+                                                            must ensure having your device connected to the internet and
+                                                            supports IPTV Can people outside United States, United
+                                                            Kingdom and Canada access IPTV? Right, you can get IPTV
+                                                            Subscription anywhere in the world . Can I use the
+                                                            subscription on multiple devices? Well, you can use your
+                                                            IPTV
+                                                            subscription on multiple devices. However, you will only be
+                                                            able to watch the channels content on one device only at the
+                                                            same time. What are the payment options? You can pay for
+                                                            your service through credit card or debit card or Bitcoin.
+                                                            Payments will be taken via a secure gateway and there aren’t
+                                                            any hidden fees. When will I get my subscription activated?
                                                             Your subscription will be activated from the moment where
                                                             you receive login credentials. You might or might not be
                                                             able
                                                             to get the credentials immediately. If you don’t receive
                                                             immediately, you don’t need to worry because the email will
-                                                            come to you eventually.
-
-                                                            How can I check the IPTV device?
-
-                                                            As the first thing, you need to ensure that activation
-                                                            details are correct.
-                                                            Then you need to make sure that the internet connection is
-                                                            working.
-                                                            Make sure that other devices connected to the network, such
-                                                            as your laptop is not overloading the network and consuming
-                                                            bandwidth.
-                                                            Ensure having a download speed of at least 4Mbps and upload
-                                                            speed of 1Mbps.
-                                                            Reboot the device, wait for 30 seconds and turn it on.
-                                                            Kindly make sure that you have connected the device to
-                                                            router via Ethernet cable, instead of Wi-Fi.
-                                                            If there is an issue with connection, you should double
-                                                            check credentials on another device.
-                                                            You can visit whatismyip.com, copy your IPD address and send
-                                                            us to restore.
-                                                            Check if the device has got latest firmware updates and app
-                                                            has got latest software updates.
-                                                            Double check the download speed on your computer.
-                                                            Check if there are any bandwidth consuming apps are running.
-                                                            If so, you need to quit them.
-                                                            Connect with your ISP and see if there is an issue in your
-                                                            area.
-                                                            Try to uninstall and reinstall the app.
-
-                                                            My channels are not working. What should I do?
-
-                                                            We are looking forward to provide you with the best possible
+                                                            come to you eventually. How can I check the IPTV device? As
+                                                            the first thing, you need to ensure that activation details
+                                                            are correct. Then you need to make sure that the internet
+                                                            connection is working. Make sure that other devices
+                                                            connected
+                                                            to the network, such as your laptop is not overloading the
+                                                            network and consuming bandwidth. Ensure having a download
+                                                            speed of at least 4Mbps and upload speed of 1Mbps. Reboot
+                                                            the device, wait for 30 seconds and turn it on. Kindly make
+                                                            sure that you have connected the device to router via
+                                                            Ethernet cable, instead of Wi-Fi. If there is an issue with
+                                                            connection, you should double check credentials on another
+                                                            device. You can visit whatismyip.com, copy your IPD address
+                                                            and send us to restore. Check if the device has got latest
+                                                            firmware updates and app has got latest software updates.
+                                                            Double check the download speed on your computer. Check if
+                                                            there are any bandwidth consuming apps are running. If so,
+                                                            you need to quit them. Connect with your ISP and see if
+                                                            there is an issue in your area. Try to uninstall and
+                                                            reinstall
+                                                            the app. My channels are not working. What should I do? We
+                                                            are looking forward to provide you with the best possible
                                                             service at all times. Therefore, we ensure that content is
-                                                            streamed to you at all times.
-                                                            If your channels are not working, you can try the following
-                                                            methods.
-
-                                                            Wait for several minutes and see. We will do a reboot or
-                                                            swap the channels if required.
-                                                            Then you need to check if you are having the issue with only
-                                                            one channel or all channels.
-                                                            Try rebooting your the device. You should wait for 30
-                                                            seconds before turning it on.
-                                                            Ensure connecting your device to the internet via an
-                                                            Ethernet cable.
-
-                                                            What should I do with channel issues?
-
-                                                            If you are having an issue with a channel, you need to
-                                                            switch to another channel. This happens due to issues from
-                                                            the
+                                                            streamed to you at all times. If your channels are not
+                                                            working, you can try the following methods. Wait for several
+                                                            minutes and see. We will do a reboot or swap the channels
+                                                            if required. Then you need to check if you are having the
+                                                            issue with only one channel or all channels. Try rebooting
+                                                            your the device. You should wait for 30 seconds before
+                                                            turning it on. Ensure connecting your device to the internet
+                                                            via
+                                                            an Ethernet cable. What should I do with channel issues? If
+                                                            you are having an issue with a channel, you need to switch
+                                                            to another channel. This happens due to issues from the
                                                             channel provider, which are beyond our control. You can take
-                                                            a look back at the channel after some time and it will
-                                                            work.
-
-                                                            I see buffering on channels. What could be the reason?
-
-                                                            High internet traffic or slow internet speeds is the main
-                                                            reason behind this. If someone in your house is using the
-                                                            broadband connection to download or upload something, this
-                                                            can happen. You need to disconnect all users from the
-                                                            broadband connection and try again.
-
-                                                            On the other hand, you need to make sure that your device is
-                                                            connected to internet via a direct LAN Ethernet connection.
-                                                            If you are on Wi-Fi, there is a high possibility for you to
-                                                            see buffering. If this is not possible, you should move the
-                                                            device closer to the router.
-
-                                                            All my channels are blank. What should I do?
-
-                                                            In case if you are using a AVOV or MAG set top box, you will
-                                                            need to do a hard reset in the device. You can do this on
-                                                            your own. All you have to do is to turn it off, unplug and
-                                                            replug.
-
-                                                            If you are on Kodi, you should clear your cache. Or else,
-                                                            you can even re-install Kodi.
-
-                                                            Some channels provide only sounds. What should I do?
-
-                                                            This happens due to an issue with settings.
-
-                                                            You need to go to settings in the device or app. Then you
-                                                            need to select Native as Decoder. You can do a restart and
-                                                            you
-                                                            will see videos with sounds.
-                                                        </div>
+                                                            a
+                                                            look back at the channel after some time and it will work. I
+                                                            see buffering on channels. What could be the reason? High
+                                                            internet traffic or slow internet speeds is the main reason
+                                                            behind this. If someone in your house is using the broadband
+                                                            connection to download or upload something, this can happen.
+                                                            You need to disconnect all users from the broadband
+                                                            connection and try again. On the other hand, you need to
+                                                            make sure that your device is connected to internet via a
+                                                            direct LAN Ethernet connection. If you are on Wi-Fi, there
+                                                            is a high possibility for you to see buffering. If this is
+                                                            not possible, you should move the device closer to the
+                                                            router. All my channels are blank. What should I do? In case
+                                                            if
+                                                            you are using a AVOV or MAG set top box, you will need to do
+                                                            a hard reset in the device. You can do this on your own.
+                                                            All you have to do is to turn it off, unplug and replug. If
+                                                            you are on Kodi, you should clear your cache. Or else, you
+                                                            can even re-install Kodi. Some channels provide only sounds.
+                                                            What should I do? This happens due to an issue with
+                                                            settings. You need to go to settings in the device or app.
+                                                            Then you need to select Native as Decoder. You can do a
+                                                            restart and you will see videos with sounds.</p>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <!-- end Block 6 -->
+                                            </div>
 
-                                        </ul>
-                                        <!-- end Box -->
+                                        </div>
 
                                     </div>
                                 </div>
                                 <!-- end left 6 -->
 
                                 <!-- start rghit 6 -->
-                                <div class="accordion-column col-lg-6 col-md-12 col-sm-12">
-                                    <div class="inner-column">
-                                        <div class="sec-title">
-                                            <div class="separator"></div>
-                                            <h3>Frequently Asked Questions</h3>
-                                        </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="container">
+                                        <div id="accordion" class="py-5">
+                                            <div class="card border-0">
 
-                                        <!-- Accordian Box -->
-                                        <ul class="accordion-box">
-
-                                            <!--Block-->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>
-                                                    What exactly is IPTV?
+                                                <div class="card-header p-0 border-0" id="heading-100">
+                                                    <button class="btn btn-link accordion-title border-0 collapse"
+                                                        data-toggle="collapse" data-target="#collapse-100"
+                                                        aria-expanded="true" aria-controls="#collapse-100"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>
+                                                        What exactly is IPTV? </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">
-                                                            it’s one of the most asked FAQ, IPTV which is also known as
+                                                <div id="collapse-100" class="collapse show"
+                                                    aria-labelledby="heading-100" data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>it’s one of the most asked FAQ, IPTV which is also known as
                                                             Internet Protocol Television is were internet is being used
                                                             as a medium to send television channels to your TV at home.
                                                             In other words, you use your internet connection to watch
                                                             the TV Channels, movies and TV shows without an antenna or a
-                                                            dish.
-                                                        </div>
+                                                            dish.</p>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </div>
 
-                                            <!--Block-->
-                                            <li class="accordion block active-block">
-                                                <div class="acc-btn active">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>What’s
-                                                    different with IPTV?
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-101">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-101"
+                                                        aria-expanded="false" aria-controls="#collapse-101"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>
+                                                        What’s different with IPTV?</button>
                                                 </div>
-                                                <div class="acc-content current">
-                                                    <div class="content">
-                                                        <div class="text">Well, when you get a dish TV connection, it is
-                                                            important to install the dish connection and decoder.
-                                                            However, you don’t
+                                                <div id="collapse-101" class="collapse " aria-labelledby="heading-101"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>Well, when you get a dish TV connection, it is important to
+                                                            install the dish connection and decoder. However, you don’t
                                                             need to go through all that hassle with IPTV. You will be
                                                             able to use the existing broadband connection to get media
                                                             content. This is a cheaper and a hassle free alternative to
-                                                            traditional satellite TV. </div>
+                                                            traditional satellite TV.</p>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </div>
 
-                                            <!--Block-->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>
-                                                    Requirements for IPTV?
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-102">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-102"
+                                                        aria-expanded="false" aria-controls="#collapse-102"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-102"></i>
+                                                        Requirements for IPTV? </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">In fact, to use IPTV you need to be equipped
-                                                            with a high speed broadband connection. Speed of the
-                                                            broadband connection
-                                                            should be at least 4Mbps. </div>
+                                                <div id="collapse-102" class="collapse " aria-labelledby="heading-102"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>In fact, to use IPTV you need to be equipped with a high
+                                                            speed broadband connection. Speed of the broadband
+                                                            connection
+                                                            should be at least 4Mbps.</p>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </div>
 
-                                            <!--Block-->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>How to
-                                                    determine speed and quality?
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-104">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-104"
+                                                        aria-expanded="false" aria-controls="#collapse-104"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-103"></i>
+                                                        How to determine speed and quality? </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">It is important to make sure that you have
-                                                            appropriate speed needed for media streaming throughout the
-                                                            day. You can use
-                                                            <a href="https://www.speedtest.net/">www.speedtest.net</a>
-                                                            to check your broadband connection speed. Then you can make
-                                                            a decision on how to proceed.
-                                                        </div>
+                                                <div id="collapse-104" class="collapse " aria-labelledby="heading-104"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>It is important to make sure that you have appropriate speed
+                                                            needed for media streaming throughout the day. You can use
+                                                            www.speedtest.net to check your broadband connection speed.
+                                                            Then you can make a decision on how to proceed.</p>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </div>
 
-                                            <!--Block-->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>How to
-                                                    determine speed and quality?
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-105">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-105"
+                                                        aria-expanded="false" aria-controls="#collapse-105"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-105"></i>
+                                                        How to determine speed and quality? </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">It is important to make sure that you have
-                                                            appropriate speed needed for media streaming throughout the
-                                                            day. You can use
-                                                            <a href="https://www.speedtest.net/">www.speedtest.net</a>
-                                                            to check your broadband connection speed. Then you can make
-                                                            a decision on how to proceed.
-                                                        </div>
+                                                <div id="collapse-105" class="collapse " aria-labelledby="heading-105"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>It is important to make sure that you have appropriate speed
+                                                            needed for media streaming throughout the day. You can use
+                                                            www.speedtest.net to check your broadband connection speed.
+                                                            Then you can make a decision on how to proceed.</p>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </div>
 
-                                            <!--Block-->
-                                            <li class="accordion block">
-                                                <div class="acc-btn">
-                                                    <div class="icon-outer"><span
-                                                            class="icon icon-plus fa fa-plus"></span> <span
-                                                            class="icon icon-minus fa fa-minus"></span></div>Is it
-                                                    possible to use IPTV in an apartment?
+                                            <div class="card border-0 wow fadeInUp"
+                                                style="visibility: visible; animation-name: fadeInUp;">
+                                                <div class="card-header p-0 border-0" id="heading-106">
+                                                    <button class="btn btn-link accordion-title border-0 collapsed"
+                                                        data-toggle="collapse" data-target="#collapse-106"
+                                                        aria-expanded="false" aria-controls="#collapse-106"><i
+                                                            class="fas fa-minus text-center d-flex align-items-center justify-content-center h-106"></i>
+                                                        Is it possible to use IPTV in an apartment? </button>
                                                 </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">Sure, you will be able to use IPTV in an
-                                                            apartment. All you need to have is a high speed internet
-                                                            connection to the
+                                                <div id="collapse-106" class="collapse " aria-labelledby="heading-106"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body accordion-body">
+                                                        <p>Sure, you will be able to use IPTV in an apartment. All you
+                                                            need to have is a high speed internet connection to the
                                                             apartment. It is a good alternative available to consider,
                                                             especially when a dish cannot be installed at your property.
-
                                                             Some channels are not working (broken voice or black
-                                                            screen)?
-
-                                                            We cannot confirm if it is due to an issue in the channel or
-                                                            due to an issue in your internet speed. You can double
-                                                            check your internet connection and wait.
-
-                                                            The M3U link isn’t working. What should I do?
-
-                                                            If the M3U link isn’t working, you can check it on your PC
-                                                            with VLC. If you can see that it is working on the PC,
-                                                            there’s something wrong in your end. At the time of entering
-                                                            M3U link, you need to make sure that you don’t keep a
-                                                            space. You can contact us for troubleshooting assistance.
-
-                                                            I cannot watch content. Have I been blocked?
-
+                                                            screen)? We cannot confirm if it is due to an issue in the
+                                                            channel
+                                                            or due to an issue in your internet speed. You can double
+                                                            check your internet connection and wait. The M3U link isn’t
+                                                            working. What should I do? If the M3U link isn’t working,
+                                                            you can check it on your PC with VLC. If you can see that it
+                                                            is working on the PC, there’s something wrong in your end.
+                                                            At the time of entering M3U link, you need to make sure that
+                                                            you don’t keep a space. You can contact us for
+                                                            troubleshooting assistance. I cannot watch content. Have I
+                                                            been blocked?
                                                             You need to check if your account is being used on another
                                                             device. You can use the account only on one device at the
-                                                            same time.
-
-                                                            If it is taking place, you can visit www.whatismyip.com,
-                                                            take a screenshot of your IP and send us. We will help you
-                                                            to
-                                                            get it fixed. Otherwise, your account might even get banned
-                                                            due to our automated security policies.
-
-                                                            We will only restore accounts for two times after banning.
-                                                            If that happens over and over again, you need to contact us.
-
-                                                            My account is not working on the STB or MAG BOX Emulator.
-                                                            Why is it?
-
-                                                            Firstly, you should check if you have entered the correct
-                                                            MAC address.
-                                                            Secondly, you should ensure that there is recommended
-                                                            internet speed.
-                                                            Thirdly, you need to get the device wired to the router.
-                                                            You need to ensure that specs of the device are powerful
-                                                            enough for streaming.
-                                                            If you are using a STB emulator, you should setup it
-                                                            accordingly.
-                                                            Wipe the cache in your STB emulator.
-                                                            If you are using a MAG BOX, you should restart it.
-                                                        </div>
+                                                            same time. If it is taking place, you can visit
+                                                            www.whatismyip.com, take a screenshot of your IP and send
+                                                            us. We will
+                                                            help you to get it fixed. Otherwise, your account might even
+                                                            get banned due to our automated security policies. We will
+                                                            only restore accounts for two times after banning. If that
+                                                            happens over and over again, you need to contact us. My
+                                                            account is not working on the STB or MAG BOX Emulator. Why
+                                                            is it? Firstly, you should check if you have entered the
+                                                            correct MAC address. Secondly, you should ensure that there
+                                                            is recommended internet speed. Thirdly, you need to get the
+                                                            device wired to the router. You need to ensure that specs of
+                                                            the device are powerful enough for streaming. If you are
+                                                            using a STB emulator, you should setup it accordingly. Wipe
+                                                            the cache in your STB emulator. If you are using a MAG BOX,
+                                                            you should restart it.</p>
                                                     </div>
                                                 </div>
-                                            </li>
+                                            </div>
 
-                                        </ul>
+
+                                        </div>
 
                                     </div>
                                 </div>
@@ -597,40 +594,95 @@
 
 
 
-        <!-- Start Main Footer / Style Two -->
-        <footer class="main-footer style-two">
+        <!-- Footer Style Two -->
+        <footer class="footer-style-three">
+            <div class="shadow-layer" style="background-image:url(images/background/shadow-6.png)"></div>
             <div class="auto-container">
+                <!--Widgets Section-->
                 <div class="widgets-section">
-                    <div class="logo">
-                        <a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+                    <div class="row clearfix">
+
+                        <!-- Col 1 -->
+                        <div class="big-column col-lg-4 col-md-12 col-sm-12">
+                            <div class="row clearfix">
+
+                                <!-- Footer Column -->
+                                <div class="footer-column col-md-12">
+                                    <div class="footer-widget logo-widget">
+                                        <div class="logo">
+                                            <a href="index-2.html"><img src="images/logo-7.png" alt="" /></a>
+                                        </div>
+                                        <div class="text">Aliqua dolor do amet sint. Velit officia Exercitation veniam
+                                            consequat
+                                            sunt nostrud amet.</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Col 2 -->
+                        <div class="big-column col-lg-4 col-md-12 col-sm-12">
+                            <div class="row clearfix">
+                                <!-- Footer Column -->
+                                <div class="footer-column col-md-12">
+                                    <div class="footer-widget contact-widget">
+                                        <h5>Useful Links</h5>
+                                        <ul class="quick-links-two">
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Term Of Service</a></li>
+                                            <li><a href="#">Refund and Returns Policy</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Col 3 -->
+                        <div class="big-column col-lg-4 col-md-12 col-sm-12">
+                            <div class="row clearfix">
+
+                                <!-- Footer Column -->
+                                <div class="footer-column col-md-12">
+                                    <div class="footer-widget contact-widget">
+                                        <h5>Get In Touch</h5>
+                                        <ul class="contact-list">
+                                            <li>
+                                                <span class="icon flaticon-telephone"></span>
+                                                + 44 737-6936-444<br>
+                                            </li>
+                                            <li>
+                                                <span class="icon flaticon-email"></span>
+                                                infoname@gmail.com
+                                            </li>
+                                            <li>
+                                                <span class="icon flaticon-house"></span>
+                                                503 Old Buffalo Street Northwest 205, New York-3087
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
-                    <ul class="contact-info-list">
-                        <li>
-                            <span class="icon"><img src="images/icons/icon-1.png" alt="" /></span>
-                            <a href="tel:+3453-909-6565">+ 44 737-6936-444</a>
-                        </li>
-                        <li>
-                            <span class="icon"><img src="images/icons/icon-2.png" alt="" /></span>
-                            <a href="mailto:infoname@gmail.com">infoname@gmail.com</a>
-                        </li>
-                        <li>
-                            <span class="icon"><img src="images/icons/icon-3.png" alt="" /></span>
-                            503 Old Buffalo Street <br> Northwest #205, New York-3087
-                        </li>
-                    </ul>
-
                 </div>
 
-            </div>
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="auto-container">
-                    <div class="copyright">&copy; 2023 . All Rights Reserved. Designed with Love By <a
-                            href="https://hamzacherki.com">Cherki Hamza</a></div>
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="inner-container">
+                        <div class="copyright">&copy; 2023 . All Rights Reserved. Designed with Love By <a
+                                href="https://hamzacherki.com">Cherki Hamza</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </footer>
-        <!-- End Main Footer -->
+        <!-- End Footer Style Nine -->
 
     </div>
     <!--End pagewrapper-->
@@ -652,7 +704,6 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/script.js"></script>
-
 
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->

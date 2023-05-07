@@ -470,10 +470,10 @@
 	bottom: 0px;
 	width: 40px;
 	height: 3px;
-	background: var(--main-color-ten);
+	/* background: var(--main-color-ten);
 	background: -webkit-linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%);
 	background: -moz-linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%);
-	background: linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%);
+	background: linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%); */
 }
 
 .footer-style-three .logo-widget {
