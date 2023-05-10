@@ -12601,3 +12601,42 @@
 .site_logo {
 	float: left;
 }
+
+/* watsapp */
+.float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 10px;
+	left: 20px;
+	background-color: #25d366;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	z-index: 100;
+}
+
+.my-float {
+	margin-top: 16px;
+}
+
+
+.dropdown-menu {
+	background-color: #2316bba6;
+	max-width: 10px;
+	margin: 15px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	background: none;
+}
+
+.register-section {
+	padding: 40px 0px 40px;
+}
+
+.sec-title-two .text {
+	margin-top: 0;
+}
