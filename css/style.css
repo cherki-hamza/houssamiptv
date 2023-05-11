@@ -12640,3 +12640,24 @@
 .sec-title-two .text {
 	margin-top: 0;
 }
+
+
+#dev {
+	margin-left: 15px;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+	#dev {
+		margin-top: 10px;
+		margin-left: 0;
+	}
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+	#dev {
+		margin-top: 10px;
+		margin-left: 0;
+	}
+}
